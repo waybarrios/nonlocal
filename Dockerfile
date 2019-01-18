@@ -6,6 +6,5 @@ RUN mkdir /video_nonlocal_net_caffe2/build
 
 RUN rm -rf /usr/lib/x86_64-linux-gnu/libcuda.so
 RUN ln -s /usr/lib/x86_64-linux-gnu/libcuda.so.410.72  /usr/lib/x86_64-linux-gnu/libcuda.so
-#RUN python /video_nonlocal_net_caffe2/setup_caffe2.py build
 RUN ldconfig
 RUN cd /video_nonlocal_net_caffe2 &&  python setup_caffe2.py install
